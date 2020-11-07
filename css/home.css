@@ -1,3 +1,11 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url('../images/');
+    background-attachment: fixed;
+    
+  }
+
 table{
     width: 100%;
 }
@@ -6,31 +14,30 @@ table{
     width: 10%;
 }
 
-.MenuOptions{
-    
-    width: 5%;
-    text-align: center;
-
-}
 
 nav ul{
     display: flex;
 }
 nav ul li{
     list-style: none;
-    padding-top: 6px;
+    padding-top: 0.5%;
+    
 }
 
 nav ul li a{
-
-    
     text-decoration: none;
     font-size: large;
-    margin: 12px;
-    color: rgb(255, 255, 255);
+    margin: 15px;
+    color: #ffffff;
+    opacity: 0.75;
     font-size: 20px;
-    font-family: "ubuntu";
+    font-family: 'oswald',sans-serif;
+    transition:all 0.5s ease;
     
+}
+nav ul li a:hover{
+    color: white;
+    opacity: 1;
 }
 
 .MenuItems{
@@ -39,17 +46,148 @@ nav ul li a{
     padding-right: 20px;
 }
 
-nav{
-    width: fit-content;
-    background-color: #178CA4;
-    top: 0;
-    left: 0;
-    right: 0;
+#navDiv{
+
+    
     position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.7s;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, #178CA4, #072a40, #178CA4, #072a40,#178CA4);
+    animation: 60s myGradient infinite;
+    box-shadow: 3px 3px 20px #252525;
+    
+    
 }
 
-img{
+@keyframes myGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50%{
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+.imgLogo{
     padding-left: 15px;
-    width: 90%;
-    height: 90%;
+    width: 151.144;
+    height: 62.16px;
+    opacity: 0.85;
+    transition:all 0.5s ease;
 }
+.imgLogo:hover{
+    opacity: 1;
+}
+
+.parallaxOne {
+
+  background-image: url("../images/seefromthesky.jpg");
+  min-height: 800px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: -35px;
+}
+
+.PartOne{
+    height:400px;
+    padding:50px;
+    background-color: white;
+    backface-visibility: visible;
+}
+
+.parallaxTwo{
+
+    background-image: url("../images/ImageThree.jpg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.PartTwo{
+    height:400px;
+    padding:50px;
+    background-color: white;
+    backface-visibility: visible;
+}
+
+
+
+.hh22{
+    position: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 200px;
+    margin: -20px;
+    color: #072a40;
+    
+}
+
+.parallaxThree{
+
+    background-image: url("../images/ImageTwo.jpg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.PartThree{
+    height:80px;
+    background-color: #072a40;
+    padding: 50px;
+}
+.hh33{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: -20px;
+    color: #F9F7F0;
+    
+}
+
+.hh00{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 350px;
+    color: #F9F7F0;
+    font-size: 70px;
+    font-family: 'oswald',sans-serif;
+    letter-spacing: 8px;
+}
+
+.hh44{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 300px;
+    color: #F9F7F0;
+    font-size: 70px;
+    font-family: 'oswald',sans-serif;
+    letter-spacing: 8px;
+
+}
+
+.hh55{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 300px;
+    color: #F9F7F0;
+    font-size: 70px;
+    font-family: 'oswald',sans-serif;
+    letter-spacing: 8px;
+
+}
+
