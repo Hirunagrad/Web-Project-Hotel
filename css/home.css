@@ -141,15 +141,7 @@ nav ul li a:hover{
     color: black;
 }
 
-.parallaxThree{
 
-    background-image: url("../images/ImageTwo.jpg");
-    min-height: 700px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   
 .PartThree{
     height:80px;
@@ -228,3 +220,151 @@ nav ul li a:hover{
 }
 
 
+.slidebody{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+  
+  
+    
+  }
+  
+  .slider{
+    width:100%;
+    height: 820px;
+    border-radius: 0px;
+  padding-top: 50px;
+    overflow: hidden;
+   
+  
+    
+  }
+  .slides{
+    width: 850%;
+    height: 300px;
+    display: flex;
+  }
+  
+  .slides input{
+  
+    display: none;
+  
+  }
+  
+  .slide{
+  
+     width: 11.8%;
+     transition: 2s;
+  }
+  
+  
+  .slide img{
+    
+    width: 100%;
+    height: 850px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    
+   
+  }
+  
+  /*normal slide navigation*/
+  
+  .navigation-manual{
+        position: absolute;
+        width: 1300px;
+        margin-top: 100px;
+        padding-left: 801px;
+        display: flex;
+        
+       padding-top: 250px;
+  
+  
+  
+  }
+  
+  .manual-btn{
+      border: 4px solid #40D3DC;
+      padding: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 1s;
+      
+  }
+  
+  .manual-btn:not(:last-child){
+  
+    margin-right: 20px;
+  }
+  
+  .manual-btn:hover{
+    background-color: #40D3DC;
+  
+  }
+  
+  #radio1:checked ~.first{
+    margin-left: 0;
+  }
+  #radio2:checked ~.first{
+    margin-left: -11.8%;
+  }
+  #radio3:checked ~.first{
+    margin-left: -23.6%;
+  }
+  #radio4:checked ~.first{
+    margin-left: -35.4%;
+  }
+  
+  
+  
+  /*automatic navigator*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 1300px;
+    justify-content: center;
+    margin-top: 650px;
+    padding-left: 180px;
+  
+   
+  }
+  
+  .navigation-auto div{
+    border: 4px solid #40D3DC;
+    padding: 5px;
+    border-radius: 30px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 20px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
