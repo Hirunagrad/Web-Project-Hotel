@@ -1,11 +1,4 @@
-body, html {
-    
-    margin: 0;
-    font-family: 'oswald',sans-serif !important;
-    scroll-behavior: smooth;
-    
-  }
-  .parallaxOne {
+.parallaxOne {
 
     background-image: url("../images/cover.jpg");
     min-height: 600px; 
@@ -49,138 +42,6 @@ h1.parallaxTwoH1{
   font-family: 'oswald',sans-serif;
 }
 
-div.PartOne{
-  width: 100%;
-  height: 1000px;
-  background-color: white;
-}
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content-Three {
-    display: none;
-    position: absolute;
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
-}
-
-  .dropdown-content-Three a {
-    color: #072a40;
-    width: 120px;
-    height: 40px;
-    padding: 8px 14px;
-    display: block;
-    margin: 0%; 
-  }
-  
-  .dropdown-content-Three a:hover {
-    
-    text-decoration: none;
-    background-color: rgb(241, 241, 241);
-    color: #072a40;
-    
-  }
-  
-  .dropdown:hover .dropdown-content-Three {
-    display: block;
-    
-  }
-  .dropdown:hover .Main-Item-Drop{
-    color: rgba(255, 255, 255, 0.75) !important;
-  }
- 
- 
-
-  div.navDiv{
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-    transition: top 0.7s;
-    background-size: 400% 400%;
-    background-image: linear-gradient(-45deg, #178CA4, #072a40, #178CA4, #072a40,#178CA4);
-    animation: 60s myGradient infinite;
-    
-  }
-
-  @keyframes myGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    
-    50%{
-      background-position: 100% 50%;
-    }
-    
-    100% {
-      background-position: 0% 50%;
-    }
-}
-
-footer {
- 
-    padding: 30px;
-    bottom: 0;
-    width: 100%;
-    height: 25%;
-    background-color: #072a40;
-    color: white;
-    text-align: center;
-    font-family: 'oswald',sans-serif;
-    
- }
-
- footer p{
-    
-    letter-spacing: 1px;
-    font-weight: 100;
-    font-size:1vw;
- }
-
- .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 52px;
-    height: 52px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 5px;
-    border-radius: 100px;
-    box-shadow: 0px 0.5px 2px #252525;
-    margin-bottom: 55px;
-    
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-      text-decoration: none;
-      color: white;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-   
-  .fa-instagram {
-    background: #db0042;
-    color: white;
-  }
 
   .card-row-one{
     margin-top: 40px;
@@ -250,17 +111,13 @@ div.Text-Contain-Zero p{
 }
 
 
-
-
-
 .container{
     z-index: -1;
 }
 
 
 .classTwo{
-  display: flex;
-  
+  display: flex;  
 }
 
 .card-row-two{
@@ -327,17 +184,13 @@ div.Text-Contain-Zero p{
 }
 
 h4.ofeercard-h{
-
 font-weight: 900px;
 color: rgb(0, 0, 0);
-
 }
 
 ul.offercard-ul{
-
   font-size: 16px;
   padding-left: 17px;
- 
 }
 
 .Text-Contain-Offer{
