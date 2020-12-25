@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/resfrm.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!--navbar Start-->
+    <div class="navDiv" id="navDiv">
+        <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+
+          <a href="#" class="navbar-brand">
+            <img src="../images/Untitled-1.png" width="100" alt="South Park">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#dropMenu"><span class="navbar-toggler-icon"></span></button>
+  
+          <div class="collapse navbar-collapse justify-content-end" id="dropMenu">
+  
+              <ul class="navbar-nav">
+                  <li class="nav-item active"><a href="home.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li class="nav-item"><a href="roomsh.html" class="nav-link">Rooms</a></li>
+                  <li class="nav-item"><a href="reservation.html" class="nav-link">Reservation</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link Main-Item-Drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Multiple
+                    </a>
+                    <div class="dropdown-content-Three">
+                      <a href="gallery.html">Gallery</a>
+                      <a href="facilities.html">Facilities</a>   
+                  </div>
+                  </li>
+                  <li class="nav-item"><a href="" class="nav-link">Login</a></li>
+              </ul>
+  
+          </div>
+      </nav>
+      </div>
+<!--navbar End-->
+
+    <div class="booking-form-box"> 
+            <form action="" method="GET">
+             
+                <legend> <h2 class="pp1">Reservation</h2> </legend>
+                <div class="booking-form"> 
+                <label for="fname" class="pp">First Name: </label>
+                <input class="form-control" type="text" name="fname" id="fname" required autofocus placeholder="Enter your first name." pattern="[a-zA-{3,}" title="Please enter valid name that includes more than 3 letters.">
+                <label for="lname" class="pp">Last Name:</label>
+                <input class="form-control" type="text" name="Last Name" id="lname" required autofocus placeholder="Enter your last name." pattern="[a-zA-Z]{3,}">
+                <label for="phone" class="pp">Phone Number:</label>
+                <input class="form-control" type="tel" name="phone" id="phone" required placeholder="Enter your phone number." pattern="[0-9]{10,}" title="Please Enter your mobile number here.">
+                <label for="email" class="pp" >Email:</label>
+                <input class="form-control" type="text" name="email" required placeholder="Enter the email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}.{1}[a-zA-Z]{2,}" title="Enter a valid email address." >
+                <label for="ardate"class="pp">Arrival Date:</label>
+                <input class="form-control" type="date" name="ardate"  title="Enter the date you arrive." >
+                <label for="depdate"class="pp">Depature date:</label>
+                <input class="form-control" type="date" name="depdate"   title="Enter the date you depature." >
+                <label for="adults" class="pp">Adults:</label>
+                <select name="adults" class="form-control" id="adult">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    
+                </select>
+                <label for="adults" class="pp">Children:</label>
+                <select name="adults" class="form-control" id="adult">
+                    <option value="1">0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    
+                </select>
+                <br>
+                <label for="cat">Select Catagory:</Select></label>
+                <select name="adults" class="form-control" id="cat">
+                    <option value="1">Executive Suite</option>
+                    <option value="2">Deluxe Suite</option>
+                    <option value="3">Regular Room</option>
+                    
+                    
+                </select>
+               
+                <button class="submitButn">Reserve</button>
+                <button class="cancelButn">Cancel</button>
+              
+                </div>
+              
+            </form>
+            
+    </div>
+    <!--Footer Start-->
+
+    <footer id="footer">
+
+        <div class="Social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+   
+        <div class="footer-copyright">
+          <p>© 2020 Copyright: Sea Side South Park</p>
+        </div>
+      </footer>
+  
+  <!--Footer End-->
+   
+    
+</body>
+</html>
