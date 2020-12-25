@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/boatchair.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}    
+.booking-form-box{
+    max-width: 450px;
+    height: auto;
+    border: 5px solid #ced4da;
+    margin: 10% auto 0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+
+}
+.pp1{
+    padding-top: 15px;
+    color: #072a40;
+    font-family: 'oswald',sans-serif;
+    text-align: center;
+
+}
+.pp{
+    
+    font-family: 'oswald',sans-serif;  
+    color: #072a40;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.submitButn{
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 0;
+    height: 35px;
+    color: #072a40;
+    margin-right: 40px;
+    width: 75px;
+    font-weight: 550px;
+    margin-left: 20px;
+  }
+.cancelButn{
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 0;
+    height: 30px;
+    color: #072a40;
+    width:75px;
+    font-weight: 550px;
+}
+button:hover{
+    background-image:linear-gradient(#178ca4,#18b7be) ;
+    color: #ffffff;
+    
+  }
+  #adult{
+      border-radius: 3px;
+      
+  }
+.booking-form{
+  padding: 0 20px 20px;
+} 
+.booking-form label{
+    margin-bottom: 5px ;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #072a40;
+}
+
+.form-control{
+    font-size: 14px !important;
+    border-radius: 5px !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    /*background: transparent !important;*/
+    box-shadow: none !important;
+
+}
+.form-control1{
+    font-size: 14px !important;
+    border-radius: 2px !important;
+    color: #ffffff !important;
+   /* background: transparent !important;*/
+    box-shadow: none !important;  
+}
+
+
