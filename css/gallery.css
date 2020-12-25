@@ -1,0 +1,150 @@
+
+.parallax {
+
+    background-image: url("../images/mandala.jpg");
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    
+  }
+
+.parallax2 {
+
+    background-image: url("../images/r5.jpg");
+    min-height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    
+  }
+.parallax3 {
+
+    background-image: url("../images/y1.jpg");
+    min-height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    
+  }
+  .parallax4 {
+
+    background-image: url("../images/p1.jpg");
+    min-height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    
+  }
+  .parallax5{
+
+    background-image: url("../images/pp1.jpg");
+    min-height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    
+  }
+
+  h1.heading{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size:500%;
+    font-weight: bold;
+    color:#0f7c92;
+    font-family: 'oswald',sans-serif;
+}
+h2{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size:5vw;
+    font-weight: bold;
+    color:#0f7c92;
+    font-family: 'oswald',sans-serif;
+
+}
+h3{
+    text-align: center;
+    font-size:5vw;
+    font-weight: bold;
+    
+    font-family: 'oswald',sans-serif; 
+}
+
+
+.row {
+    margin: 15px;
+}
+
+
+
+.btn:hover{
+    background-color: #0f7c92;
+    color: white;
+    border: none;
+
+}
+
+.linkbuttons a{
+    text-decoration: none;
+    color: #0f7c92;
+    text-transform: uppercase;
+
+    
+}
+.linkbuttons a:hover{
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.card{  
+    margin-top: 2%;
+    margin-bottom:20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    border-radius: 10px;
+
+
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+div.para{  
+    text-align:center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size:8vw;
+    font-weight: bold;
+    font-family: 'oswald',sans-serif;
+    color: white;
+    text-shadow:2px 4px 4px #000000;
+}
+hr{
+width: 80%;
+background: white;   
+   
+   }
+.line{   
+    width: 30%;
+   }
+.card-img{
+    height: 320px;
+}
+.carousel1{
+    transition: 0.3s;
+}
+

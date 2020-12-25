@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sea Side South Park</title>
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/gallery.css">
+        <link rel="stylesheet" href="../css/gallery_part2.css">
+        <script src="../js/home.js"></script>
+        <script src="../js/Gallery.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    
+
+  
+
+
+
+    </head>
+   
+    <body>
+
+<!--navbar Start-->
+      <div class="navDiv" id="navDiv">
+        <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+
+          <a href="#" class="navbar-brand">
+            <img src="../images/Untitled-1.png" width="100" alt="South Park">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#dropMenu"><span class="navbar-toggler-icon"></span></button>
+  
+          <div class="collapse navbar-collapse justify-content-end" id="dropMenu">
+  
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
+                  <li class="nav-item"><a href="reservation.html" class="nav-link">Reservation</a></li>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link Main-Item-Drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Multiple
+                    </a>
+                    <div class="dropdown-content-Three">
+                      <a href="gallery.html">Gallery</a>
+                      <a href="facilities.html">Facilities</a>   
+                  </div>
+                  </li>
+                  <li class="nav-item"><a href="" class="nav-link">Login</a></li>
+              </ul>
+  
+          </div>
+      </nav>
+      </div>
+<!--navbar End-->
+
+  
+        <h1 class="heading " id="gal">Gallery</h1>
+
+              <center>
+
+    <button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons"><a href="#rooms" target="_self">ROOMS & SUITES</a></button>
+    <button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons"><a href="#wedding" target="_self">WEDDINGS</a></button>
+    <button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons"><a href="#dining" target="_self">DINING</a></button>
+    <button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons"><a href="#exterior" target="_self">ACTIVITIES</a></button>
+  </center>
+<hr class="line">
+
+
+
+
+
+
+
+
+<!--Start-->
+
+<div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+  </ol>
+  
+  <div class="carousel-inner carousel2" role="listbox">
+    <!--Start carousel-item1-->
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/rooms.png" alt="First slide"  >
+        <div class="mask rgba-black-light"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item1-->
+
+    <!--Start carousel-item2-->
+    <div class="carousel-item">     
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/wedding.png" alt="Second slide" >
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item2-->
+
+    <!--Start carousel-item3-->
+    <div class="carousel-item">      
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/dining.png"  alt="Third slide"  >
+        <div class="mask rgba-white-slight"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item3-->
+
+    <!--Start carousel-item4-->
+    <div class="carousel-item">      
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/exterior.png"  alt="Third slide"  >
+        <div class="mask rgba-white-slight"></div>
+      </div>     
+    </div>
+    <!--End carousel-item4-->
+
+  </div>
+  
+  <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ 
+</div>
+<!--Rooms & Suites Start-->
+
+   <h2 class=" text-center" id="rooms">ROOMS & SUITES</h2>
+<div class="container-fluid ">
+  <div class="row">
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" mx-auto d-block im1 img-fluid" src="../images/r1.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r2.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r3.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r4.jpg">      
+    </div>  
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r5.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r6.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r7.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r8.jpg">      
+    </div> 
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r9.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r10.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r11.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r12.jpg">      
+    </div> 
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r14.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/r15.jpg">      
+    </div>      
+  </div>
+</div>
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="#gal" target="_self">Back</a></button>
+
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="../html/gallery.html#gallery" target="_self">Back to Gallery</a></button>
+
+<hr class="line">
+<!--Rooms & Suites End-->
+
+<!--Weddings Start-->
+ <h2 class=" text-center" id="wedding">WEDDINGS</h2>
+<div class="container-fluid ">
+  <div class="row">
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" mx-auto d-block im1 img-fluid" src="../images/w1.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w2.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w3.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w4.jpg">      
+    </div>  
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w5.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w6.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w7.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w8.jpg">      
+    </div>   
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w9.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w10.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w11.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w12.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w13.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w14.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w15.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/w16.jpg">      
+    </div>     
+  </div>
+</div>
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="#gal" target="_self">Back</a></button>
+
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="../html/gallery.html#gallery" target="_self">Back to Gallery</a></button>
+
+<hr class="line">
+<!--Weddings End-->
+
+<!--Dining Start-->
+ <h2 class=" text-center" id="dining">DINING</h2>
+<div class="container-fluid ">
+  <div class="row">
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" mx-auto d-block im1 img-fluid" src="../images/f1.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f2.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f3.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f4.jpg">      
+    </div>  
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f5.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f6.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f7.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f8.jpg">      
+    </div> 
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f9.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f10.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f11.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f12.jpg">      
+    </div>  
+     <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f13.jpg">      
+    </div>  
+     <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f14.jpg">      
+    </div>  
+     <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f15.jpg">      
+    </div>
+     <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/f16.jpg">      
+    </div>         
+  </div>
+</div>
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="#gal" target="_self">Back</a></button>
+
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="../html/gallery.html#gallery" target="_self">Back to Gallery</a></button>
+
+<hr class="line">
+<!--Dining End-->
+
+<!--Exterior Start-->
+ <h2 class=" text-center" id="exterior">ACTIVITIES</h2>
+<div class="container-fluid ">
+  <div class="row">
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" mx-auto d-block im1 img-fluid" src="../images/b1.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b2.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b3.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b19.jpg">      
+    </div>  
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b20.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b7.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b8.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b21.jpg">      
+    </div>  
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3" >
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b22.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b11.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4 col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b12.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b13.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b14.jpg">      
+    </div> 
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b15.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b16.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/b17.jpg">      
+    </div> 
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/s1.jpg">      
+    </div>
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/s2.jpg">      
+    </div> 
+    <div class=" col-12 col-sm-6 col-lg-4  col-xl-3">
+      <img class=" d-block im1  mx-auto img-fluid" src="../images/s3.jpg">      
+    </div>          
+  </div>
+</div>
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="#gal" target="_self">Back</a></button>
+
+<button type="button" class="btn btn-outline-info btn-rounded waves-effect linkbuttons" id="linkbtn"><a href="../html/gallery.html#gallery" target="_self">Back to Gallery</a></button>
+
+<hr class="line">
+<!--Exterior End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer Start-->
+
+<footer id="footer">
+
+    <div class="Social">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+
+    <div class="footer-copyright">
+      <p>© 2020 Copyright: Sea Side South Park</p>
+    </div>
+  </footer>
+
+<!--Footer End-->
+    </body>
+</html>
