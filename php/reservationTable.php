@@ -96,7 +96,7 @@
             </tr>
 
             <tr>
-              <th scope="row">Number of Childrens</th>
+              <th scope="row">Number of Children</th>
 
               <td style="right: 0;">
               <?php 

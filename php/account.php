@@ -55,7 +55,8 @@
               <div class="dropdown-content-Three">
                 <a href="../html/gallery.html">Gallery</a>
                 <a href="../html/facilities.html">Facilities</a>  
-                <a href="../html/festivals.html">Festivals</a>   
+                <a href="../html/festivals.html">Festivals</a>  
+                <a href="../html/faq.html">FAQ</a> 
             </div>
             </li>
             <li class="nav-item active" ><a href="isloginAc.php" class="nav-link">Account</a></li>
