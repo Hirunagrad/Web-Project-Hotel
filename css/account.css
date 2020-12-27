@@ -1,0 +1,58 @@
+.parallaxOne {
+
+    background-image: url("../images/vintage.jpg");
+    min-height: 600px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: -35px;
+    margin-top: 0%;
+    
+  }
+
+  h1.parallaxH1{
+    text-align: center;
+    padding-top: 220px;
+    font-size:6vw;
+    font-weight: bold;
+    color: white;
+    font-family: 'oswald',sans-serif;
+}
+
+h3.acdetails{
+
+    color: #072a40;
+    font-weight: bold;
+
+}
+
+td{
+    width: 25%;
+}
+
+.OppsH1{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.bookyour a{
+    text-align: center;
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.bookyour a:hover{
+    text-align: center;
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.oopscont{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(177, 177, 177);
+    margin-bottom: 100px;
+    
+}

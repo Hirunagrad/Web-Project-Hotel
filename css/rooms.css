@@ -96,7 +96,7 @@
   }
 
 
-  .button{
+  .btnseemo{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border: none;
     width: 95%;
@@ -112,8 +112,23 @@
   }
 
 
-  .button:hover{
+  .btnseemo:hover{
     background-color: #0f7c92;
     color: rgb(213, 222, 230);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
+
+  .bNowwPop{
+    background-color: #178CA4;
+    border-color: #178CA4;
+    width: 40%;
+    
+}
+
+.bNowwPop:hover{
+    background-color: #02282f;
+    border-color: #02282f ;
+}
+
+ 

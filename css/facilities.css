@@ -68,14 +68,15 @@ body {
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
-.btn{
-    background-color: #ffffff;
-    color: #072a40;
+.btn-primary{
+
+    background-color: #178CA4; 
+    border-color: #178CA4;
+
 }
-.btn:hover{
-    background-color: #072a40;
-    color: #f9f7f0;
-    font-size: 16px;
+.btn-primary:hover{
+    background-color: #137d92; 
+    border-color: #137d92;
 
 
 }
