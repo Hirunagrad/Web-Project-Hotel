@@ -171,6 +171,25 @@
 
              <div class="footer-copyright">
               <p>© 2020 Copyright: Sea Side South Park</p>
+
+              <?php
+                  include_once 'connection.php';
+                  $sql = "UPDATE Counterr SET visits = visits+1 WHERE id = 1";
+                  $conn->query($sql);
+
+                  $sqql = "SELECT visits FROM Counterr WHERE id = 1";
+                  $resullt = $conn->query($sqql);
+
+                  if ($resullt->num_rows > 0) {
+                      while($roow = $resullt->fetch_assoc()) {
+                          $visits = $roow["visits"];
+                          echo "<p> Visitor Count: " . $visits . "<p>"; 
+                      }
+                  } else {
+                      echo "no results";
+                  }
+                
+              ?>
             </div>
              
             </div>   
