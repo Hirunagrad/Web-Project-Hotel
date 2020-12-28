@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Sea Side South Park</title>
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/footer1.css">
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/learnmore.css">
+        <script src="../js/home.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script src="../js/popups.js"></script>
+        <script src="../js/signupValidation.js"></script>
+
+    </head>
+    <body>
+
+<!--navbar Start-->
+<div class="navDiv" id="navDiv">
+  <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+
+    <a href="home.html" class="navbar-brand">
+      <img src="../images/Untitled-1.png" width="100" alt="South Park">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#dropMenu"><span class="navbar-toggler-icon"></span></button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="dropMenu">
+
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="roomsh.html" class="nav-link">Rooms</a></li>
+            <li class="nav-item"><a href="../php/isloginRe.php" class="nav-link">Reservation</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link Main-Item-Drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Multiple
+              </a>
+              <div class="dropdown-content-Three">
+                <a href="gallery.html">Gallery</a>
+                <a href="facilities.html">Facilities</a>  
+                <a href="festivals.html">Festivals</a>
+                <a href="faq.html">FAQ</a>    
+            </div>
+            </li>
+            <li class="nav-item" ><a href="../php/isloginAc.php" class="nav-link">Account</a></li>
+            <li class="nav-item" ><a href="javascript:newly()" class="nav-link">Login</a></li>
+        </ul>
+
+    </div>
+</nav>
+</div>
+<!--navbar End-->
+
+<!--Login Signup Start-->
+
+<div class="bs-example">
+  <div id="myModal" class="modal fade" tabindex="-1">
+    
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" id="1">
+              <div class="modal-header">
+
+                  <strong>
+                      <h2 class="logsignh2">Login</h2>
+                  </strong>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <div class="modal-body" >
+
+                  <form action="../php/login.php" method="POST">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" name="pwdd" id="exampleInputPassword1" placeholder="Password" required>
+                      </div>
+                      
+                      <div class="modal-footer">
+                          <button type="submit" class="btn btn-secondary" onclick="newlyy()" data-dismiss="modal">Don't have an account</button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                          <button type="submit" class="btn btn-primary" name="login">Login</button>
+                      </div>
+  
+                    </form>
+                  
+            </div>
+              
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="bs-example">
+<div id="myModal2" class="modal fade" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content" id="1">
+          <div class="modal-header">
+
+              <strong>
+                  <h2 class="logsignh2">Signup</h2>
+              </strong>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <div class="modal-body" >
+              
+
+            <form action="../php/signup.php" method="POST" name="signup">
+
+
+              <div class="form-group">
+                  <label for="exampleInputEmail1">First Name <span id="demo1" style="color: #0f7c92;"></span></label> 
+                  <input type="text" class="form-control" name="fname" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter first name" required>
+                  
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Last Name <span id="demo2" style="color: #0f7c92;"></span></label>
+                  <input type="text" class="form-control" name="lname" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter last name" required>
+                  <p id="demo2"></p>                     
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address <span id="demo3" style="color: #0f7c92;"></span></label>
+                  <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <p id="demo3"></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password <span id="demo4" style="color: #0f7c92;"></span></label>
+                  <input type="password" class="form-control" name="pwd" id="exampleInputPassword1" placeholder="Password" required>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-secondary" onclick="newly()" data-dismiss="modal">Already have an account</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" name="signup" onclick="validateSignup()">Signup</button>
+                </div>
+
+          </form>
+          
+        </div>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+<!--Login Signup End-->
+<div class="parallax1" id="parallax1">
+        <h1 class="para">Hotel With Nature</h1>
+      </div>
+
+
+
+
+<div class="container con">
+
+        <div class="row">                   
+            
+             <div class="col-12  col-md-6 col-xl-4">
+               <img class="img1 img-fluid" src="../images/n1.jpg" alt="">
+               <img class="img1 img-fluid" src="../images/n2.jpg" alt="">
+               <a href="../html/gallery_part2.html#exterior"> More >>> </a>
+             </div>
+       
+
+        <div class="col-12  col-md-6 col-xl-8 ">
+              <div class="card bg-light mb-3 c1" > 
+
+                <div class="card-body">
+                  <h2 class="card-title text-center">Nature</h2>
+                  <p class="card-text">Sri Lanka may look like a dot and a teardrop at the end of the Indian Subcontinent, but it is a treasure trove of adventures waiting to be discovered by anyone who cares to look closer.<br>
+
+From sandy seashores that periphery the island to the rising mountains in the middle and the Majestic Valley of the Royals in North-Central Sri Lanka is a portion of the marvels that keep on entrancing the guests to Sri Lanka. Pressed into a little island about the size of the State of Florida, every fascination and city of interest are only a bounce and a skirt away from one another.<br>
+
+Seashores are the fundamental fascination of Sri Lanka and the most loved are the ones found in the Southern corner of the nation. The best portion of seashores begins at Beruwala with the Golden Mile Beach of Sri Lanka and spreads right around the lower part of the nation associating with the Eastern seashores at Okanda.<br>
+
+The Golden Mile Beach which spreads among Bentota and Beruwala offers experiences in the sea from scuba plunging and swimming to kite surfing, water skiing, and surfing. With the most profound wreck jump and a portion of the picturesque plunging area arranged close to a choice plunging supplies and preparing focuses, make the Golden Mile Beach an advantageous area to satisfy your requirement for water experience.<br>
+
+Notwithstanding, in the event that you are an impassioned fanatic of surfing and searching for an area that offers surfing nonstop and around the year, Weligama Bay is the spot for you. The shallow sandy seashores of Weligama Bay is an ideal area to get your first wave. Shielded from the breeze and unpleasant climate, surfing at the cove can at present be reasonable despite the fact that the remainder of seashores is totally smothered.</p><br>
+
+</p><br>
+                </div>
+              </div>       
+    </div>
+</div>
+</div>
+
+<!--Strat carousel;-->
+<div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+  </ol>
+  
+  <div class="carousel-inner carousel1" role="listbox">
+    <!--Start carousel-item1-->
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/nature1.jpg" alt="First slide" >
+        <div class="mask rgba-black-light"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item1--> 
+
+    <!--Start carousel-item2-->
+    <div class="carousel-item">     
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/yy.jpg" alt="Second slide" >
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item2-->
+
+    <!--Start carousel-item3-->
+    <div class="carousel-item">      
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/nature6.jpg"  alt="Third slide"  >
+        <div class="mask rgba-white-slight"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item3-->
+
+    <!--Start carousel-item4-->
+    <div class="carousel-item">      
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/sc2.jpg"  alt="Third slide"  >
+        <div class="mask rgba-white-slight"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item4-->
+
+  </div>
+  
+  <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ 
+</div>
+<hr class="line">
+
+
+<!--End carousel-->
+
+
+
+
+<div class="parallax2" id="parallax2">
+        <h1 class="para">We Serve Fresh and Delicious Foods</h1>
+      </div>
+
+
+
+
+<div class="container con">
+
+        <div class="row">                   
+            
+             <div class="col-12  col-md-6 col-xl-4">
+               <img class="img1 img-fluid" src="../images/food1.jpg" alt="">
+               <img class="img1 img-fluid" src="../images/f1.jpg" alt="">
+               <a href="../html/gallery_part2.html#dining"> More >>> </a>
+             </div>
+       
+
+        <div class="col-12  col-md-6 col-xl-8 ">
+              <div class="card bg-light mb-3 c1" > 
+
+                <div class="card-body">
+                  <h2 class="card-title text-center">Fresh and Delicious Foods</h2>
+                  <p class="card-text">The gentle, refreshing breeze blows through – all day and night, bringing in the sounds and smells of the sea to mingle with the delicious aromas that linger across the vast open area surrounding a courtyard and flanked by the lush greenery of the garden to one side and the palm fringed ocean on the other. Just where to pick your ideal dining spot might be as absorbing as choosing from the culinary delights spread out on the buffet. At the Golden Palms, our airy and spacious main restaurant, choice is what we have on offer – in our cuisine, and in our ambience.<br><p>
+
+Serving breakfast, lunch and dinner our extensive menus comprise Western and Eastern dishes, as well as traditional Sri Lankan favourites made from fresh, locally sourced ingredients. You can pick your favourites or sample the tastes of the exotic and if you wish for something different, or extra special our a la carte menu also offers a wide selection. Our extensive wine list offers plenty to find the right complement to your meal.</p>
+</p><br>
+                </div>
+              </div>       
+    </div>
+</div>
+</div>
+
+<!--Strat carousel;-->
+<div id="carousel2" class="carousel slide carousel-fade" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+  </ol>
+  
+  <div class="carousel-inner carousel1" role="listbox">
+    <!--Start carousel-item1-->
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/food4.jpg" alt="First slide" >
+        <div class="mask rgba-black-light"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item1--> 
+
+    <!--Start carousel-item2-->
+    <div class="carousel-item">     
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/food3.jpg" alt="Second slide" >
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item2-->
+
+    <!--Start carousel-item3-->
+    <div class="carousel-item">      
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/food5.jpg"  alt="Third slide"  >
+        <div class="mask rgba-white-slight"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item3-->
+
+    <!--Start carousel-item4-->
+    <div class="carousel-item">      
+      <div class="view">
+        <img class="d-block w-100 img-fluid" src="../images/food6.jpg"  alt="Third slide"  >
+        <div class="mask rgba-white-slight"></div>
+      </div>
+      
+    </div>
+    <!--End carousel-item4-->
+
+  </div>
+  
+  <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ 
+</div>
+
+<!--End carousel-->
+
+
+
+
+
+
+
+<!--Footer Start-->
+
+          <footer id="footer">          
+            <form action="../php/feedback.php" method="POST">
+              <div class="container">
+                <h1 style="color: white; text-align: left; font-weight: bold; padding-bottom: 10px;">Contact Us</h1>
+                <div class="row">
+                  <div class="col-6 col-mid-6">
+                    <div class="form-group" style="text-align: left;">
+                      
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="cemail" required>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <button type="submit" class="btn btn-primary submit-Button-comment" name="fback">Submit</button>
+                    </div>
+                  </div>
+                  <div class="col-6 col-mid-6">
+                    <div class="form-group" style="text-align: left;">
+                      <label for="exampleInputEmail1">Comment</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Comment" name="comment" required>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>       
+            <div class="container">
+              <div class="Social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+             </div>
+
+             <div class="footer-copyright">
+              <p>© 2020 Copyright: Sea Side South Park</p>
+            </div>
+             
+            </div>   
+          </footer>
+
+      <!--Footer End-->
+    
+    
+    </body>
+
+</html>

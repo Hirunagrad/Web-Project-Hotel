@@ -1,0 +1,66 @@
+body{    
+    background-image: url("../images/mandala.jpg");
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    scroll-behavior: smooth; 
+
+}
+.con{
+	margin-top: 5%;
+}
+
+.parallax1 {
+
+    background-image: url("../images/nature5.jpg");
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: -35px;
+    margin-top: 0%;
+    
+  }
+  .parallax2 {
+
+    background-image: url("../images/food.jpg");
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: -35px;
+    margin-top: 10%;
+    
+  }
+
+
+  h1.para{
+  	text-align: center;
+    padding-top: 220px;
+    font-size:6vw;
+    font-weight: bold;
+    color: #F9F7F0;
+    font-family: 'oswald',sans-serif;
+
+  }
+  .img1{
+  	margin-bottom: 2%;
+  }
+  .card{
+  	opacity: 0.8;
+  }
+  h2{
+  	color: #072a40; 
+  }
+  .carousel{
+  	margin-bottom: 10%;
+  	margin-top: 5%;
+  	transition: 0.2s;
+  }
+  .line{
+  	width: 50%;
+  }
