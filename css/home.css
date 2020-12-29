@@ -108,6 +108,7 @@ div.Text-Contain-Zero h1{
 }
 div.Text-Contain-Zero p{
   line-height: 24px;
+  text-align: justify;
 }
 
 
@@ -181,6 +182,7 @@ div.Text-Contain-Zero p{
 .imgcard-p{
   color: #072a40;
   font-size: 15px;
+  text-align: justify;
 }
 
 h4.ofeercard-h{
